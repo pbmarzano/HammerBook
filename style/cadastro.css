@@ -1,45 +1,33 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-image: linear-gradient(to bottom right, #d93f078f, #f2b705);
-    height: 100vh;
 }
 
-/* Create two unequal columns that floats next to each other */
-.column {
-float: left;
-padding: 10px;
-height: 300px; /* Should be removed. Only for demonstration */
+.row { 
+    display: flex;
+    justify-content: center;
 }
 
-.left {
-width: 40%;
+.column-image {
+    flex: 40%;
 }
 
-.right {
-width: 60%;
+.column-form1{
+    flex: 20%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-content: "";
-display: table;
-clear: both;
+.column-form2{
+    flex: 20%;
 }
-
 
 img {
-    margin: 200px 100px 100px 300px;
-    width: 50%;
+    margin: 220px 0 0 160px;
+    width: 40%;
 }
 
-#formLogin {
-    max-width: 460px;
-    margin-top:16%;
-    margin-bottom: 15%;
-    margin-left: 10%;
+.formCadastro {
+    max-width: 350px;
+    margin-top:22%;
+    margin-bottom: 120px;
     border: 1px solid black;
     border-radius: 10px;
     background: #242320;
@@ -64,7 +52,6 @@ label, legend, p {
 }
 
 button {
-    margin-top: 15px;
     width: 100%;
     background: #E14E08;
     color:#FAEABC;
@@ -73,9 +60,4 @@ button {
     border-radius: 4px;
     font-family: monospace;
     font-size: 25px;
-}
-
-button:hover {
-    background-color: red;
-    transition-duration: 350ms;
 }
